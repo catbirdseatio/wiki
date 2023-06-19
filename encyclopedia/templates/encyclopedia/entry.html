@@ -1,0 +1,6 @@
+{% extends 'encyclopedia/layout.html' %}
+{% load markdown %}
+
+{% block body %}
+    <div class="entry">{{ entry|markdown|safe }}</div>
+{% endblock  %}
