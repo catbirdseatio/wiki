@@ -18,6 +18,9 @@ def index(request):
         return render(request, "encyclopedia/index.html", {"entries": entries})
 
 
+def create(request):
+    return render(request, "encyclopedia/create.html")
+
 def search(request, q):
     entries = util.list_entries()
     results = [entry for entry in entries if re.search(q, entry, re.IGNORECASE)]
@@ -31,6 +34,7 @@ def title(request, title):
     if entry:
         return render(request, "encyclopedia/entry.html", {"entry": entry})
     return HttpResponseRedirect(reverse("not_found"))
+
 
 def not_found(request):
     return render(request, "encyclopedia/not_found.html")
