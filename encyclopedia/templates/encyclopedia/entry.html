@@ -3,4 +3,5 @@
 
 {% block body %}
     <div class="entry">{{ entry|markdown|safe }}</div>
+    <a href="{% url 'update' title %}">Update</a>
 {% endblock  %}
