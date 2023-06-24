@@ -3,7 +3,7 @@ import random
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-from encyclopedia.forms import EntryForm
+from .forms import EntryForm
 from . import util
 
 
