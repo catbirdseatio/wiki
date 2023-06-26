@@ -25,7 +25,7 @@ def create(request):
         if form.is_valid():
             title = form.cleaned_data["title"]
             content = form.cleaned_data["content"]
-            content = f"#{title}\n{content}"
+            content = f"#{title}\n\n{content}"
             util.save_entry(title, content)
 
             return HttpResponseRedirect(reverse("title", args=[title]))

@@ -32,8 +32,9 @@
         </nav>
     </header>
     <main>
-        {% block body %}
-        {% endblock %}
+        <div class="container">
+            {% block body %}{% endblock %}
+        </div>
     </main>
     <footer></footer>
     <script src="{% static 'encyclopedia/index.js' %}"></script>

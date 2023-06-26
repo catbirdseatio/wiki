@@ -3,10 +3,12 @@
 {% block title %}Update {{ title }}{% endblock  %}
 
 {% block body %}
-    <h2>Update &quot;{{ title }}&quot;</h2>
-    <form action="" method="post">
-        {% csrf_token %}
-        {{ form }}
-        <input type="submit" value="Update">
-    </form>
+    <div class="form-container">
+        <h2>Update &quot;{{ title }}&quot;</h2>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Update">
+        </form>
+    </div>
 {% endblock  %}

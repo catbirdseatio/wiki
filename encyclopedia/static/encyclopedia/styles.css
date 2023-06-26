@@ -1,7 +1,36 @@
+.form-container {
+  line-height: 1.3;
+  font-size: 2.25rem;
+}
+.form-container h2 {
+  text-align: center;
+  padding: 1.2rem 0 2rem;
+}
+.form-container form {
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .form-container form {
+    grid-template-columns: 150px 2fr;
+  }
+  .form-container form label {
+    text-align: right;
+  }
+  .form-container form input[type=submit] {
+    grid-column: 2/3;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
 }
 
 html {
@@ -29,6 +58,7 @@ button {
   border: none;
 }
 
+/* HEADER STYLES */
 header {
   background-color: seagreen;
 }
@@ -63,7 +93,11 @@ header nav .right-navbar {
   align-items: center;
   gap: 1.5rem;
 }
+header nav .right-navbar form {
+  width: 250px;
+}
 header nav .right-navbar form input[type=search] {
+  width: 100%;
   padding: 0.6rem 1.2rem;
   border: 1px solid #bccfe3;
   border-radius: 0.6rem;
@@ -107,8 +141,6 @@ header nav .right-navbar ul a:hover {
   }
   header nav .right-navbar form {
     margin-bottom: 1.5rem;
-  }
-  header nav .right-navbar form input {
     width: 100%;
   }
   header nav .right-navbar ul {
@@ -116,6 +148,46 @@ header nav .right-navbar ul a:hover {
   }
   header nav .right-navbar.active {
     left: 0;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-grow: 1;
+  height: 100%;
+  background-color: cornflowerblue;
+  overflow: scroll;
+}
+main .container {
+  background-color: #fff;
+  width: 800px;
+  height: auto;
+  border-radius: 10px;
+  padding: 15px;
+}
+main .container h1 {
+  text-align: center;
+  padding: 2rem 0;
+}
+main .container ul {
+  font-size: 2rem;
+}
+main .container .entry {
+  margin-bottom: 2rem;
+}
+main .container .entry li {
+  list-style: square;
+  margin-left: 1.5rem;
+}
+main .container .update-link {
+  color: green;
+}
+@media (min-width: 768px) {
+  main {
+    align-items: center;
   }
 }
 
