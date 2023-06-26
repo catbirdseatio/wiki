@@ -1,5 +1,5 @@
 .form-container {
-  line-height: 1.3;
+  line-height: 1.1;
   font-size: 2.25rem;
 }
 .form-container h2 {
@@ -8,7 +8,7 @@
 }
 .form-container form {
   display: grid;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .form-container form {
@@ -164,7 +164,6 @@ main {
   flex-grow: 1;
   height: 100%;
   background-color: cornflowerblue;
-  overflow: scroll;
 }
 main .container {
   background-color: #fff;
@@ -180,6 +179,10 @@ main .container h1 {
 main .container ul {
   font-size: 2rem;
 }
+main .container .entries li {
+  margin-bottom: 2rem;
+  border-bottom: 1px dotted gray;
+}
 main .container .entry {
   margin-bottom: 2rem;
 }
@@ -192,7 +195,7 @@ main .container .update-link {
 }
 @media (min-width: 768px) {
   main {
-    align-items: center;
+    overflow: scroll;
   }
 }
 

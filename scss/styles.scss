@@ -171,7 +171,6 @@ main {
     flex-grow: 1;
     height: 100%;
     background-color: cornflowerblue;
-    overflow: scroll;
 
     .container {
         background-color: #fff;
@@ -189,6 +188,13 @@ main {
             font-size: 2rem;
         }
 
+        .entries {
+            li {
+                margin-bottom: 2rem;
+                border-bottom: 1px dotted gray;
+            }
+        }
+
         .entry {
             margin-bottom: 2rem;
 
@@ -204,6 +210,6 @@ main {
     }
 
     @media (min-width: 768px) {
-        align-items: center;
+        overflow: scroll;
     }
 }
