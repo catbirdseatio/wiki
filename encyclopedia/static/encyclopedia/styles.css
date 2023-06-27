@@ -1,8 +1,5 @@
-.form-container {
-  line-height: 1.1;
-  font-size: 2.25rem;
-}
 .form-container h2 {
+  font-size: 3rem;
   text-align: center;
   padding: 1.2rem 0 2rem;
 }
@@ -10,21 +7,24 @@
   display: grid;
   gap: 1.25rem;
 }
+.form-container form label {
+  font-size: 2.5rem;
+}
 .form-container form input, .form-container form textarea {
   font-family: inherit;
   font-size: 2rem;
   border: 1px solid gainsboro;
 }
 .form-container form input {
-  padding: 1rem;
+  padding: 1.75rem;
   border-radius: 3rem;
   width: 100%;
 }
 .form-container form textarea {
   width: 100%;
   resize: vertical;
-  padding: 15px;
-  border-radius: 15px;
+  padding: 1.75rem;
+  border-radius: 1.5rem;
   height: 150px;
 }
 .form-container form input[type=submit] {
@@ -37,7 +37,6 @@
   background-color: seagreen;
   color: #fff;
   font-weight: 600;
-  border-radius: 1rem;
   width: 100%;
 }
 .form-container form .errorlist {
