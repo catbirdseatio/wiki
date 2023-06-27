@@ -30,7 +30,7 @@
 
 html,
 body {
-  height: 100vh;
+  height: 100%;
 }
 
 html {
@@ -164,6 +164,7 @@ main {
   flex-grow: 1;
   height: 100%;
   background-color: cornflowerblue;
+  overflow: auto;
 }
 main .container {
   background-color: #fff;
@@ -194,9 +195,13 @@ main .container .update-link {
   color: green;
 }
 @media (min-width: 768px) {
-  main {
+  main .entry {
     overflow: scroll;
   }
+}
+
+footer {
+  background-color: gainsboro;
 }
 
 /*# sourceMappingURL=styles.css.map */
