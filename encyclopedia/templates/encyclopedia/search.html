@@ -7,7 +7,7 @@
 {% block body %}
     <h1>Search Results</h1>
 
-    <ul>
+    <ul class="entries">
         {% for result in results %}
             <li><a href="{% url 'title' result %}">{{ result }}</a></li>
         {% endfor %}

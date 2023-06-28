@@ -97,7 +97,7 @@ button {
 
 /* HEADER STYLES */
 header {
-  background-color: seagreen;
+  background-color: #2E8B57;
 }
 header nav {
   display: flex;
@@ -170,7 +170,7 @@ header nav .right-navbar ul a:hover {
     left: -100%;
     top: 7.55rem;
     gap: 0;
-    background-color: seagreen;
+    background-color: #2E8B57;
     width: 100%;
     text-align: center;
     transition: 0.5s;
@@ -195,7 +195,7 @@ main {
   align-items: start;
   flex-grow: 1;
   height: 100%;
-  background-color: cornflowerblue;
+  background-image: linear-gradient(dodgerblue, #6699CC);
   overflow: auto;
 }
 main .container {
@@ -233,7 +233,13 @@ main .container .update-link {
 }
 
 footer {
-  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #00416A;
+}
+footer small {
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */

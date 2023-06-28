@@ -1,5 +1,11 @@
 @import "forms.scss";
 
+$NAV_BACKGROUND: #2E8B57;
+$NAV_TEXT: #fff;
+$NAV_TEXT_HOVER: darkorange;
+$MAIN_BACKGROUND: #6699CC;
+$FOOTER_BACKGROUND: #00416A;
+
 * {
     padding: 0;
     margin: 0;
@@ -45,7 +51,7 @@ button {
 
 /* HEADER STYLES */
 header {
-    background-color: seagreen;
+    background-color: $NAV_BACKGROUND;
 
     nav {
         display: flex;
@@ -74,7 +80,7 @@ header {
                 margin: 0.5rem auto;
                 -webkit-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
-                background-color: #fff;
+                background-color: $NAV_TEXT;
             }
         }
 
@@ -139,7 +145,7 @@ header {
                 left: -100%;
                 top: 7.55rem;
                 gap: 0;
-                background-color: seagreen;
+                background-color: $NAV_BACKGROUND;
                 width: 100%;
                 text-align: center;
                 transition: 0.5s;
@@ -170,7 +176,8 @@ main {
     align-items: start;
     flex-grow: 1;
     height: 100%;
-    background-color: cornflowerblue;
+    background-image: linear-gradient(dodgerblue, $MAIN_BACKGROUND);
+    // background-color: $MAIN_BACKGROUND;
     overflow: auto;
 
     .container {
@@ -219,5 +226,12 @@ main {
 
 // FOOTER STYLES
 footer {
-    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $FOOTER_BACKGROUND;
+
+    small {
+        color: $NAV_TEXT;
+    }
 }
