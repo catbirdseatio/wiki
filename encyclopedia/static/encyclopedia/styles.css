@@ -25,7 +25,7 @@
   resize: vertical;
   padding: 1.75rem;
   border-radius: 1.5rem;
-  height: 150px;
+  height: 250px;
 }
 .form-container form input[type=submit] {
   /* remove default behavior */
@@ -149,7 +149,7 @@ header nav .right-navbar ul a {
   transition: 0.7s ease;
 }
 header nav .right-navbar ul a:hover {
-  color: darkorange;
+  color: #6699CC;
 }
 @media (max-width: 768px) {
   header nav .hamburger {
@@ -195,7 +195,7 @@ main {
   align-items: start;
   flex-grow: 1;
   height: 100%;
-  background-image: linear-gradient(dodgerblue, #6699CC);
+  background-image: linear-gradient(#1E90FF, #6699CC);
   overflow: auto;
 }
 main .container {
@@ -224,7 +224,10 @@ main .container .entry li {
   margin-left: 1.5rem;
 }
 main .container .update-link {
-  color: green;
+  color: #00416A;
+}
+main .container .update-link:hover {
+  color: #6699CC;
 }
 @media (min-width: 768px) {
   main .entry {

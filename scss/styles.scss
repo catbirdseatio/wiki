@@ -2,7 +2,7 @@
 
 $NAV_BACKGROUND: #2E8B57;
 $NAV_TEXT: #fff;
-$NAV_TEXT_HOVER: #082567;
+$NAV_TEXT_HOVER: #6699CC;
 $MAIN_BACKGROUND: #6699CC;
 $FOOTER_BACKGROUND: #00416A;
 
@@ -110,7 +110,7 @@ header {
                     transition: 0.7s ease;
 
                     &:hover {
-                        color: darkorange;
+                        color: $NAV_TEXT_HOVER;
                     }
                 }
             }
@@ -176,8 +176,7 @@ main {
     align-items: start;
     flex-grow: 1;
     height: 100%;
-    background-image: linear-gradient(dodgerblue, $MAIN_BACKGROUND);
-    // background-color: $MAIN_BACKGROUND;
+    background-image: linear-gradient(#1E90FF, $MAIN_BACKGROUND);
     overflow: auto;
 
     .container {
@@ -213,7 +212,11 @@ main {
         }
 
         .update-link {
-            color: green;
+            color: $FOOTER_BACKGROUND;
+
+            &:hover {
+                color: $NAV_TEXT_HOVER;
+            }
         }
     }
 
