@@ -199,6 +199,11 @@ main {
             li {
                 margin-bottom: 2rem;
                 border-bottom: 1px dotted gray;
+
+                &.empty-results {
+                    border: none;
+                    text-align: center;
+                }
             }
         }
 

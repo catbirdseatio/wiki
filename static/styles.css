@@ -214,11 +214,7 @@ main .container ul {
 }
 main .container .entries li {
   margin-bottom: 2rem;
-  border-bottom: 1px dotted gray;
-}
-main .container .entries li.empty-results {
-  border: none;
-  text-align: center;
+  border-bottom: 1px dotted red;
 }
 main .container .entry {
   margin-bottom: 2rem;

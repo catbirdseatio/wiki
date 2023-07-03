@@ -1,6 +1,8 @@
 {% extends 'encyclopedia/layout.html' %}
 {% load markdown %}
 
+{% block title %}{{ title }}{% endblock  %}
+
 {% block body %}
     <div class="entry">{{ entry|markdown|safe }}</div>
     <a href="{% url 'update' title %}" class="update-link">Update</a>
