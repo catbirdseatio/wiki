@@ -8,8 +8,8 @@ from . import util
 
 
 def index(request):
-    q = request.GET.get("q")
     entries = util.list_entries()
+    q = request.GET.get("q")
 
     if q:
         if q in entries:

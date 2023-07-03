@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}Wiki{% endblock %}</title>
     <link href="{% static 'encyclopedia/styles.css' %}" rel="stylesheet">
 </head>
 <body>
@@ -25,8 +25,8 @@
                 </form>
                 <ul>
                     <li><a href="{% url 'index' %}">Home</a></li>
-                    <li><a href="{% url 'create' %}">New</a></li>
-                    <li><a href="{% url 'random' %}">Random</a></li>
+                    <li><a href="{% url 'create' %}">Create New Page</a></li>
+                    <li><a href="{% url 'random' %}">Random Page</a></li>
                 </ul>
             </div>
         </nav>

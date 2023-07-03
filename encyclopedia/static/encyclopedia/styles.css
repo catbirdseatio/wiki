@@ -149,7 +149,7 @@ header nav .right-navbar ul a {
   transition: 0.7s ease;
 }
 header nav .right-navbar ul a:hover {
-  color: #6699CC;
+  color: #d174a8;
 }
 @media (max-width: 768px) {
   header nav .hamburger {
@@ -231,7 +231,7 @@ main .container .update-link {
   color: #00416A;
 }
 main .container .update-link:hover {
-  color: #6699CC;
+  color: #d174a8;
 }
 @media (min-width: 768px) {
   main .entry {
